@@ -1,0 +1,116 @@
+
+body{
+    height:100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /* allows content to resize to the window size*/
+    .content{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.navbar{
+    background-color: black;
+    color:white; 
+    align-items: center;
+    /* auto format size on nav bar */
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      /* list as a whole in a nav bar*/
+      li {
+        margin: 0 50px; /* spacing between objects on nav bar */
+      }
+
+      /* Text of nav bar */
+      li a {  
+        display: block;
+        color: red;
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        padding: 30px 20px;
+        text-decoration: none;
+      }
+      /* nav bar active selection*/
+      .active{
+        background-color: white;
+        color: red; 
+    }
+
+   
+}/* end of nav bar class formatting*/
+
+ /* responsive resizing of nav bar*/
+ @media(max-width: 768px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .navbar a{ /* formatting links*/
+        padding: 10px 20px;
+    }
+ }
+
+
+/* round image formatting */
+.round-image{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%; /* makes image circular */
+    object-fit: cover;/* makes sure image fits in circle */
+    margin: 30px; /* adds spacing around the object */
+    display: block;/* make image behave like a block element */
+    margin:auto; /* centers image horizontally */
+
+}
+
+/* h1 formatting*/
+h1{
+    margin: 50px; /* spacing around object*/
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    margin: 50px; /* spacing around object*/
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+.main-headline{
+    margin: 50px; /* spacing around object*/
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
